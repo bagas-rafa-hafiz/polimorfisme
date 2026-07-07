@@ -1,0 +1,28 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+public class Bank {
+   protected String namaBank = "Bank Umum";
+
+   public Bank() {
+   }
+
+   public void transferUang(int var1, String var2) {
+      System.out.println("Transfer Rp" + var1 + " ke rekening " + var2);
+   }
+
+   public void transferUang(int var1, String var2, String var3) {
+      System.out.println("Transfer Rp" + var1 + " ke rekening " + var2 + " di bank " + var3);
+   }
+
+   public void transferUang(int var1, String var2, String var3, String var4) {
+      System.out.println("Transfer Rp" + var1 + " ke rekening " + var2 + " di bank " + var3);
+      System.out.println("Berita: " + var4);
+   }
+
+   public void sukuBunga() {
+      System.out.println("Suku Bunga standar adalah 3%");
+   }
+
+   public double hitungBiayaTransfer(String var1) {
+      return (double)6500.0F;
+   }
+}
