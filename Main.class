@@ -1,0 +1,26 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] var0) {
+      System.out.println("=== Testing Bank (Overloading) ===");
+      Bank var1 = new Bank();
+      var1.transferUang(100000, "123456");
+      var1.transferUang(200000, "654321", "Mandiri");
+      var1.transferUang(300000, "111222", "BRI", "Bayar kos bulan Juli");
+      var1.sukuBunga();
+      System.out.println("\n=== Testing BankBNI (Overriding) ===");
+      BankBNI var2 = new BankBNI();
+      var2.transferUang(150000, "777888", "BRI");
+      var2.sukuBunga();
+      System.out.println("Biaya transfer ke BRI: Rp" + var2.hitungBiayaTransfer("BRI"));
+      System.out.println("Biaya transfer ke BNI: Rp" + var2.hitungBiayaTransfer("BNI"));
+      System.out.println("\n=== Testing BankBCA (Overriding) ===");
+      BankBCA var3 = new BankBCA();
+      var3.transferUang(250000, "999000", "Mandiri");
+      var3.sukuBunga();
+      System.out.println("Biaya transfer ke Mandiri: Rp" + var3.hitungBiayaTransfer("Mandiri"));
+      System.out.println("Biaya transfer ke BCA: Rp" + var3.hitungBiayaTransfer("BCA"));
+   }
+}
