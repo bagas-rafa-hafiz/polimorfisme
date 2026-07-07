@@ -1,0 +1,19 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+public class BankBCA extends Bank {
+   public BankBCA() {
+      this.namaBank = "BCA";
+   }
+
+   public void transferUang(int var1, String var2, String var3) {
+      var3 = "BCA";
+      System.out.println("Transfer Rp" + var1 + " ke rekening " + var2 + " di bank " + var3);
+   }
+
+   public void sukuBunga() {
+      System.out.println("Suku Bunga dari BCA adalah 4.5%");
+   }
+
+   public double hitungBiayaTransfer(String var1) {
+      return var1.equalsIgnoreCase("BCA") ? (double)0.0F : (double)6500.0F;
+   }
+}
